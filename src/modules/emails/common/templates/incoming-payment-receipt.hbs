@@ -1,0 +1,206 @@
+<html>
+  <head>
+    <meta charset='UTF-8' />
+    <title>Payment Invoice Paid</title>
+  </head>
+  <body
+    style='font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f4f4f4; color: #333; line-height: 1.4;'
+  >
+    <table width='100%' cellpadding='0' cellspacing='0' border='0' style='background-color: #f4f4f4; padding: 20px;'>
+      <tr>
+        <td>
+          <table
+            width='750'
+            cellpadding='0'
+            cellspacing='0'
+            border='0'
+            align='center'
+            style='background-color: #ffffff; padding: 30px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);'
+          >
+            <tr>
+              <td>
+                <table width='100%' cellpadding='0' cellspacing='0' border='0'>
+                  <tr>
+                    <td style='font-family: Arial, sans-serif; color: #333; line-height: 1.4;'>
+                      <p style='margin: 0; padding: 0;'>WE MAKE IT CLEAR/
+                        <span style='color: red;'>INTERPRETING 24/7</span></p>
+                    </td>
+                    <td style='width: 80px;'>
+                      <img src='https://lfh-media-prod.s3.ap-southeast-2.amazonaws.com/email-templates/logo-without-name.png' alt='Logo' style='width: 80px;' />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan='2' style='padding-top: 40px;'></td>
+                  </tr>
+                  <tr>
+                    <td style='text-align: left;'>
+                      <img
+                        src='https://lfh-media-prod.s3.ap-southeast-2.amazonaws.com/email-templates/logo-with-name.png'
+                        alt='Labeled Logo'
+                        style='width: 200px;'
+                      />
+                    </td>
+                    <td style='text-align: right;'>
+                      <div style='text-align: right;'>
+                        <b>To {{userName}}</b><br />
+                        <b>(Client ID {{clientId}})</b><br />
+                        <p>{{street}}</p>
+                        <p>{{city}}</p>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td
+                style='font-family: Arial, sans-serif; color: #333; line-height: 1.4;  padding-top: 20px; padding-bottom: 20px;'
+              >
+                <b>TAX INVOICE</b><br />
+                <p>ABN 42 661 208 635</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3 style='font-family: Arial, sans-serif; color: #333; line-height: 1.4;'>Invoice Number {{receiptNumber}} - PAID</h3>
+                <table
+                  width='100%'
+                  cellpadding='0'
+                  cellspacing='0'
+                  border='1'
+                  style='border-collapse: collapse; margin: 20px 0;'
+                >
+                  <thead>
+                    <tr>
+                      <th style='padding: 8px; text-align: center; font-size: 14px;'>Currency</th>
+                      <th style='padding: 8px; text-align: center; font-size: 14px;'>Date of Issue</th>
+                      <th style='padding: 8px; text-align: center; font-size: 14px;'>Total</th>
+                      <th style='padding: 8px; text-align: center; font-size: 14px;'>GST Amount</th>
+                      <th style='padding: 8px; text-align: center; font-size: 14px;'>Invoice Total</th>
+                      <th style='padding: 8px; text-align: center; font-size: 14px;'>Amount Paid</th>
+                      <th style='padding: 8px; text-align: center; font-size: 14px;'>Amount Due</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style='padding: 8px; text-align: center; font-size: 14px;'>{{currency}}</td>
+                      <td style='padding: 8px; text-align: center; font-size: 14px;'>{{issueDate}}</td>
+                      <td style='padding: 8px; text-align: center; font-size: 14px;'>{{total}}</td>
+                      <td style='padding: 8px; text-align: center; font-size: 14px;'>{{gstAmount}}</td>
+                      <td style='padding: 8px; text-align: center; font-size: 14px;'>{{invoiceTotal}}</td>
+                      <td style='padding: 8px; text-align: center; font-size: 14px;'>{{amountPaid}}</td>
+                      <td style='padding: 8px; text-align: center; font-size: 14px;'>{{amountDue}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3 style='font-family: Arial, sans-serif; color: #333; line-height: 1.4;'>Details</h3>
+                <table
+                  width='100%'
+                  cellpadding='0'
+                  cellspacing='0'
+                  border='1'
+                  style='border-collapse: collapse; margin: 20px 0;'
+                >
+                  <thead>
+                    <tr>
+                      <th style='padding: 8px; text-align: center; font-size: 14px;'>Booking ID</th>
+                      <th style='padding: 8px; text-align: center; font-size: 14px;'>Service</th>
+                      <th style='padding: 8px; text-align: center; font-size: 14px;'>Topic</th>
+                      <th style='padding: 8px; text-align: center; font-size: 14px;'>Date & Time Of Service</th>
+                      <th style='padding: 8px; text-align: center; font-size: 14px;'>Interpreter ID</th>
+                      <th style='padding: 8px; text-align: center; font-size: 14px;'>Duration in Minutes</th>
+                      <th style='padding: 8px; text-align: center; font-size: 14px;'>Total</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style='padding: 8px; text-align: center; font-size: 14px;'>{{bookingId}}</td>
+                      <td style='padding: 8px; text-align: center; font-size: 14px;'>{{service}}</td>
+                      <td style='padding: 8px; text-align: center; font-size: 14px;'>{{topic}}</td>
+                      <td style='padding: 8px; text-align: center; font-size: 14px;'>{{serviceDate}}</td>
+                      <td style='padding: 8px; text-align: center; font-size: 14px;'>{{interpreterId}}</td>
+                      <td style='padding: 8px; text-align: center; font-size: 14px;'>{{duration}}</td>
+                      <td style='padding: 8px; text-align: center; font-size: 14px;'>{{invoiceTotal}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3 style='font-family: Arial, sans-serif; color: #333; line-height: 1.4;'>Payment</h3>
+                <table
+                  width='100%'
+                  cellpadding='0'
+                  cellspacing='0'
+                  border='1'
+                  style='border-collapse: collapse; margin: 20px 0;'
+                >
+                  <thead>
+                    <tr>
+                      <th style='padding: 8px; text-align: center; font-size: 14px;'>Date</th>
+                      <th style='padding: 8px; text-align: center; font-size: 14px;'>Description</th>
+                      <th style='padding: 8px; text-align: center; font-size: 14px;'>Payment Total</th>
+                      <th style='padding: 8px; text-align: center; font-size: 14px;'>This Invoice</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style='padding: 8px; text-align: center; font-size: 14px;'>{{date}}</td>
+                      <td style='padding: 8px; text-align: center; font-size: 14px;'>{{description}}</td>
+                      <td style='padding: 8px; text-align: center; font-size: 14px;'>{{paymentTotal}}</td>
+                      <td style='padding: 8px; text-align: center; font-size: 14px;'>{{thisInvoice}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td style='font-family: Arial, sans-serif; color: #333; line-height: 1.4;'>
+                <table
+                  width='100%'
+                  cellpadding='0'
+                  cellspacing='0'
+                  border='0'
+                  style='margin-top: 50px; font-size: 14px;'
+                >
+                  <tr>
+                    <td style='text-align: left;'>
+                      <a href='http://www.linguafrancahub.com'>www.linguafrancahub.com</a>
+                    </td>
+                    <td style='text-align: right;'>
+                      <a href='mailto:payments@lighuafrancahub.com'>payments@lighuafrancahub.com</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan='2' style='padding-top: 10px;'></td>
+                  </tr>
+                  <tr>
+                    <td colspan='2' style='text-align: center;'>
+                      <p>Lingua Franca Hub PTY LTD. @NSW, Australia, 2024</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan='2' style='padding-top: 10px;'></td>
+                  </tr>
+                  <tr>
+                    <td colspan='2' style='text-align: center;'>
+                      <a
+                        href='{{receiptLink}}'
+                        style=' text-decoration: none; background-color: #f4f4f4; padding: 10px 20px; border-radius: 5px; display: inline-block;'
+                      >Download PDF</a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

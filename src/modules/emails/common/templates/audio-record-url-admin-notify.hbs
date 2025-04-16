@@ -1,0 +1,66 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio Recording Access Notification</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+      .container {
+        background-color: #ffffff;
+        padding: 20px;
+        margin: 0 auto;
+        max-width: 600px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .header {
+        font-size: 24px;
+        color: #444444;
+      }
+      .content {
+        margin-top: 20px;
+        line-height: 1.6;
+      }
+      .footer {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 12px;
+        color: #aaaaaa;
+      }
+      .button {
+        display: inline-block;
+        background-color: #007bff;
+        color: #ffffff;
+        padding: 10px 20px;
+        margin-top: 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p class="header">Hello Administrator,</p>
+      <p class="content">
+        The audio recording will be available for download and listening soon. You can access the recording using the
+        link below.
+      </p>
+      <a href="{{audioUrlLink}}" class="button">Access Audio Recording</a>
+      <a href="{{appointmentUrlLink}}" class="button">Go to Appointment</a>
+      <p class="content">
+        Please note, the recording will be accessible from
+        <strong>{{dateAccess}}</strong>
+        until
+        <strong>{{dateExpiration}}</strong>. After this period, the file will be returned to deep archive.
+      </p>
+      <p class="footer">Best regards,<br />The LFH Company Team</p>
+    </div>
+  </body>
+</html>
